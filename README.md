@@ -31,9 +31,9 @@ Binary Search's efficiency and simplicity make it a fundamental algorithm with w
 
 # Function Description
 
-int binarysearch(int array[] , int size, int target) {
-     // this function creates a start integer and an end integer
+This function creates a start integer and an end integer
 
+    int binarysearch(int array[] , int size, int target) {
     int start = 0;
     int end = size-1;
     while (start <= end) {
@@ -57,20 +57,21 @@ int binarysearch(int array[] , int size, int target) {
         }
     }
     return -1;
-}
+    }
 
-int main() {
-  //We create a sorted array as binary search is applicable on sorted arrays only and then we take input an integer that is to be found in the array
+We create a sorted array as binary search is applicable on sorted arrays only and then we take input an integer that is to be found in the array
+
+    int main() {
     int array[7] = {1,3,4,5,7,8,9};
     int x;
     cout << "Enter the element to be searched : ";
     cin >> x;
     
-   // Now we call a function named binarysearch
+   Now we call a function named binarysearch
    
     int ans = binarysearch(array,7,x);
     if (ans == -1) {
         cout << "Not found";
     }
     else cout << "Found at : " << ans;
-}
+    }
