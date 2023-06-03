@@ -38,16 +38,16 @@ This function creates a start integer and an end integer
     int end = size-1;
     while (start <= end) {
     
-    // we run a while loop which has a condition that start is less than or equal to end and we create a mid integer 
+ We run a while loop which has a condition that start is less than or equal to end and we create a mid integer 
     
         int mid = (start + end)/2;
         
-        // if the element at the index mid is equal to the target then mid is returned
+ If the element at the index mid is equal to the target then mid is returned
         
         if (array[mid] == target) {
             return mid;
         }
-        // else if it is less than target element we increase the start to mid+1 and in any ohter condition end is decreased to mid-1
+Else if it is less than target element we increase the start to mid+1 and in any ohter condition end is decreased to mid-1
         
         else if (array[mid] < target) {
             start = mid+1;
